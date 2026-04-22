@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.VisualBasic.FileIO;
 
 namespace PlaylistManager
-{upa
+{ 
     internal class Program
     {
         static void Main()
@@ -82,7 +82,7 @@ namespace PlaylistManager
                     case "5":
                         playlist = ShuffleRebuild(playlist);
                         current = playlist.Head;
-                        Console.WriteLine("Shuffled playlist ✅");
+                        Console.WriteLine("Shuffled playlist successfully ");
                         break;
 
                     case "6":
@@ -129,7 +129,7 @@ namespace PlaylistManager
 
             using var writer = new StreamWriter(csvPath, false);
 
-            writer.WriteLine("Index, Title, Artist, Album, Duration, Genre");
+            writer.WriteLine("Index,Title,Artist,Album,Duration,Genre");
 
             int i = 0;
             var node = playlist.Head;
